@@ -347,7 +347,7 @@ public:
    * alpha characters and eventually a @ if makeAtletter activated
    */
   inline bool isValidCharInCmd(wchar_t ch) const {
-    return isalpha(ch) || (_atIsLetter != 0 && ch == '@');
+    return iswalpha(ch) || (_atIsLetter != 0 && ch == '@');
   }
 };
 

@@ -47,7 +47,7 @@ private:
   }
 
   bool isSpace(const string& str) {
-    return std::all_of(str.begin(), str.end(), [](char c) { return isspace(c); });
+    return std::all_of(str.begin(), str.end(), [](char c) { return isspace(static_cast<unsigned char>(c)); });
   }
 
 public:
